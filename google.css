@@ -38,3 +38,10 @@ nav > ul{
         margin-top: 10px;
     }
 }
+img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 9em;
+    max-width: 100%;
+    height: auto;
+}
