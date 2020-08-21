@@ -6,36 +6,44 @@ html, body{
     padding: 0;
     font-size: 16px;
 }
+body{
+    position: relative;
+    min-height: 100vh;
+}
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
 }
-nav{
+#navbar{
     margin-top: 5px;
     display: flex;
     justify-content: flex-end;
 }
-nav > ul{
+#navbar > ul{
     min-width: 200px;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-right: 1.5em;
 }
 .nav-link{
     color: rgba(0,0,0,0.87);
     font-size: 0.85em;
 }
+#profile-logo{
+	border-radius: 50%;
+}
 .nav-link:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-img{
+#logo{
     display: block;
     margin: 0 auto;
-    margin-top: 9em;
+    margin-top: 7.5em;
     max-width: 100%;
     height: auto;
 }
@@ -85,20 +93,67 @@ input{
     color: black;
     border: 1px solid #aaa;
 }
+#idioma{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 2.5rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    color: #555;
+    font-size: 0.8em;
+}
+#locacion{
+    border-bottom: 1px solid #ddd;
+}
+#locacion p{
+    margin-left: 1em;
+}
+#footer-nav ul{
+    padding: 0;
+}
+#footer-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ul-nav li a{
+    color: #555;
+}
+.ul-nav{
+    display: flex;
+    justify-content: space-around;
+}
+.ul-nav li{
+    margin: 0 1em;
+}
+.ul-nav li:hover{
+    text-decoration: underline;
+}
 
 @media (max-width: 550px){
-    nav{
+    #navbar{
         justify-content: center;
     }
-    nav > ul{
+    #navbar > ul{
         margin-right: 0;
         margin-top: 10px;
     }
-    img{
+    #logo{
         margin-top: 4em;
     }
     #text-input{
         width: 90%;
+    }
+    #footer-nav{
+        justify-content: center;
+    }
+    #link-ocultar{
+        display: none;
     }
 }
 
